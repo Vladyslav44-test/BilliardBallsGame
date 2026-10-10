@@ -23,4 +23,13 @@ public class OneBallBehavior : MonoBehaviour
         Vector3 axis = new Vector3(XRotation, YRotation, ZRotation);
         transform.RotateAround(Vector3.zero, axis, DegreesPerSecond * Time.deltaTime);
     }
+    private void OnMouseDown()
+    {
+        GameController controller = Camera.main.GetComponent<GameController>();
+        if (!controller.GameOver)
+        {
+            controller.ClickedOnBall();
+            Destroy(gameObject);
+        }
+    }
 }
