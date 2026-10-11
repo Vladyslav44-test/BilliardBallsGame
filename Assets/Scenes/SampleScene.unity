@@ -643,7 +643,8 @@ MonoBehaviour:
   Score: 0
   GameOver: 1
   NumberOfBalls: 0
-  MaximumBalls: 15
+  MaximumBalls: 20
+  GeneratingSpeed: 5
 --- !u!1 &1441635754
 GameObject:
   m_ObjectHideFlags: 0

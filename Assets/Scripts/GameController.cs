@@ -9,12 +9,13 @@ public class GameController : MonoBehaviour
     public int Score = 0;
     public bool GameOver = true;
     public int NumberOfBalls = 0;
-    public int MaximumBalls = 15;
+    public int MaximumBalls = 20;
+    public float GeneratingSpeed = 5F;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("AddABall", 1.5f, 1);
+        InvokeRepeating("AddABall", GeneratingSpeed, 1);
     }
 
     // Update is called once per frame
