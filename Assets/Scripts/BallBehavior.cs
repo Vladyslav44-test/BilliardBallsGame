@@ -14,11 +14,11 @@ public abstract class BallBehavior : MonoBehaviour
     /// Швидкість пересування м'яча по осі Z.
     /// </summary>
     protected float ZSpeed;
+
     /// <summary>
     /// Значення, що визначає маскимальну позицію м'яча.
     /// </summary>
-    protected static readonly float TooFar = 5F;
-
+    protected abstract float TooFar { get; }
     /// <summary>
     /// Множник, який визначає зміну швидкості руху м'яча.
     /// </summary>
@@ -56,7 +56,7 @@ public abstract class BallBehavior : MonoBehaviour
         GameController controller = Camera.main.GetComponent<GameController>();
         if (!controller.GameOver)
         {
-            controller.ClickedOnBall();
+            controller.ClickedOnBall(Score);
             Destroy(gameObject);
         }
     }

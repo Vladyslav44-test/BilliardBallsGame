@@ -639,12 +639,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameController
   ScoreText: {fileID: 316571459}
   PlayAgainButton: {fileID: 177340054}
-  OneBallPrefab: {fileID: 5118770993139856751, guid: 724327aca32fc0e409a1945f4d6132fb, type: 3}
-  Score: 0
+  TheMostOftenBalls:
+  - {fileID: 5118770993139856751, guid: 724327aca32fc0e409a1945f4d6132fb, type: 3}
+  - {fileID: 4950011417199467882, guid: 3608076e9710b334d9fede2fc9ecdd2a, type: 3}
+  - {fileID: 8631615543300345997, guid: 6393f9474266d7e44a6b91bc8942c6a2, type: 3}
+  MediumOftenBalls:
+  - {fileID: 5734019098754455861, guid: e6172eeb7fa5d0b46bf785de808da096, type: 3}
+  - {fileID: 4553591638386803060, guid: 9b3e144328a3f63498d5af8fcf542277, type: 3}
+  - {fileID: 5897710726849309778, guid: ac825fbeb87a4d940aeed1f924904411, type: 3}
+  RareBalls:
+  - {fileID: 7482843114381687755, guid: 9e98f09a98cbbf44dbdcb23de44e72b2, type: 3}
+  - {fileID: 4036884839340004051, guid: 3db5b5f3a13032d448f24b12ab77135f, type: 3}
+  TheRarestBalls:
+  - {fileID: 2345009733215047820, guid: 548407154aac1074a949452c5a3b2266, type: 3}
+  - {fileID: 5320834994914046156, guid: cf5033ffa78fc6f4fbdcf0e0f749b1dc, type: 3}
   GameOver: 1
-  NumberOfBalls: 0
-  MaximumBalls: 20
-  GeneratingSpeed: 5
 --- !u!1 &1441635754
 GameObject:
   m_ObjectHideFlags: 0
