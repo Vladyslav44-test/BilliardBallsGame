@@ -59,7 +59,6 @@ public class GameController : MonoBehaviour
     {
         InvokeRepeating("AddABall", GeneratingSpeed, 1);
     }
-
     /// <summary>
     /// Виводить поточні набрані очки на екран та виводить кнопку початку нової гри при програші.
     /// </summary>
@@ -91,10 +90,10 @@ public class GameController : MonoBehaviour
     private GameObject ChooseRandomBallPrefab()
     {
         byte randomNumber = (byte)random.Next(1, 101);
-        if (randomNumber <= 10) return TheRarestBalls[random.Next(3)];
-        else if (randomNumber <= 30) return RareBalls[random.Next(3)];
-        else if (randomNumber <= 50) return MediumOftenBalls[random.Next(4)];
-        return TheMostOftenBalls[random.Next(4)];
+        if (randomNumber <= 10) return TheRarestBalls[random.Next(2)];
+        else if (randomNumber <= 30) return RareBalls[random.Next(2)];
+        else if (randomNumber <= 50) return MediumOftenBalls[random.Next(3)];
+        return TheMostOftenBalls[random.Next(3)];
     }
     /// <summary>
     /// Збільшує набрані очки гравця при натисканню по м'ячі та зменшує загальну кількість м'ячів.
