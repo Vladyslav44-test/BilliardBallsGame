@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8387166416387392653}
   m_Layer: 0
   m_Name: SevenBall
-  m_TagString: GameController
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

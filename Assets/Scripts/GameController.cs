@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour
     /// <summary>
     /// Швидкість генерації нових м'ячів (у секундах).
     /// </summary>
-    private readonly float GeneratingSpeed = 5F;
+    private readonly float GeneratingSpeed = 2F;
 
     /// <summary>
     /// Запускає циклічний процес генерації м'ячів.
@@ -109,7 +109,7 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void StartGame()
     {
-        foreach (GameObject ball in GameObject.FindGameObjectsWithTag("GameController"))
+        foreach (GameObject ball in GameObject.FindGameObjectsWithTag("Ball"))
         {
             Destroy(ball);
         }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4092037559772590480}
   m_Layer: 0
   m_Name: OneBall
-  m_TagString: GameController
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,11 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f37f9bbf4b812489442c70fd2ff19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OneBallBehavior
-  XRotation: 0
-  YRotation: 1
-  ZRotation: 0
-  DegreesPerSecond: 180
-  BallNumber: 0
 --- !u!54 &4092037559772590480
 Rigidbody:
   m_ObjectHideFlags: 0
